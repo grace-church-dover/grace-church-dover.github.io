@@ -2,28 +2,20 @@
 <html>
 <head>
   <title>Grace Church of Dover Staging</title>
-  <link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.5.0/styles/webawesome.css">
-  <script type="module" src="https://ka-f.webawesome.com/webawesome@3.5.0/webawesome.loader.js"></script>
+  <link rel="preconnect" href="images/crowd.jpg" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-image: url('images/boards.jpg');
-      background-size: 100%
-    }
-    .container{
-      /* display: grid;
-      grid-template-rows: auto 1fr auto; */
-      min-height: 100vh; /* or any height */
-      filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.75));
-  background-color: transparent; /* Ensure it doesn't block the wood */
+    body { 
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
     }
     .hero {
-background: 
-    linear-gradient(to bottom, transparent 95%, #000000 100%), 
-    url('images/crowd.jpg');
-    background-size: cover;
-    background-position: center;
-    clip-path: ellipse(150% 100% at 50% 0%);
-      min-height: 700px;
+         background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/crowd.jpg');
+        background-size: cover;
+        background-position: center;
+      min-height: 60vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -32,69 +24,52 @@ background:
       position: relative;
     }
 
-.hero h1, .hero h2 {
-  color: white;
-  text-shadow: 
-    2px 2px 4px rgba(0, 0, 0, 1), 
-    0px 0px 15px rgba(0, 0, 0, 0.8),
-    0px 0px 30px rgba(0, 0, 0, 0.5);
-  
-  font-weight: 500; 
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-
-    .footer{
-      background-color: #000000;
-      color:white;
-      height: 100px;
-      display: flex;
-      align-items: center;
-      padding: 0rem 1rem;
+    .hero h1{
+        font-family: "Oswald", sans-serif;
+        font-size: 4rem;
+        font-weight: 500;
+    }
+    #navbar {
+        overflow: hidden;
+        background-color: #000000;
+        padding: 5px 10px;
+        transition: 0.4s;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 99;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
     }
 
-    .card{
-      background-color:white;
-      height: 250px;
-      flex: 1;
-      border-radius: 1rem;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-    .cardContainer{
-      display: flex;
-      flex-direction: row;
-      gap:5rem;
-      padding-bottom: 5rem;
-    }
-
-    .contentContainer{
-
-      padding: 3rem
+    #navbar a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px; 
+        line-height: 25px;
+        border-radius: 4px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+    <div id="navbar">
+        <a href="#default" id="logo">
+            <img src="images/logo.webp"/>
+        </a>
+        <div id="navbuttons">
+            <a href="#about">I'm New</a>
+            <a href="#about">About</a>
+            <a href="#about">Ministries</a>
+            <a href="#about">Give</a>
+        </div>
+    </div>
     <div class="hero">
       <h1>Welcome to Grace Church</h1>
-      <h2>25 Willand Drive Somersworth, NH</h2>
-      <h2>Sundays @ 10 AM</h2>
     </div>
-    <div class="contentContainer">
-      <div class="cardContainer">
-        <div class="card">I'm New</div>
-        <div class="card">Giving</div>
-        <div class="card">Our Story</div>
-      </div>
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/3sx4ev1KmuuCdogRtHqF7W?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-    
-    <div class="footer">
-      <img src="images/logo.webp"/>
-      <div>Address 25 Willand Drive | Somersworth, NH | 03878</div>
-      <div>Social Icons</div>
-    </div>
-  </div>
+
 </body>
 </html>
