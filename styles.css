@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/crowd.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero.hero-compact {
+    min-height: 40vh;
+}
+
+.hero.hero-im-new {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/building_entrance.png');
+}
+
+.info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.info-item {
+    flex: 0 1 260px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.info-item .info-icon {
+    font-size: 2.75rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.info-item h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 0.75rem 0;
+    letter-spacing: 0.02em;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.info-item a {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+.hero h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    text-shadow: 4px 4px 3px #000000;
+    text-transform: uppercase;
+    margin: 1rem 0rem;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #000000;
+    padding: 10px 0px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#navbuttons a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+#navbuttons a:hover {
+    background-color: white;
+    color: black;
+}
+
+#navbuttons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-self: end;
+    margin-right: 1rem;
+}
+
+.hero .button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+.hero .button:hover {
+    background-color: white;
+    color: black;
+}
+
+#logo {
+    justify-self: start;
+    margin-left: 1rem;
+}

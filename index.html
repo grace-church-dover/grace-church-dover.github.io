@@ -1,123 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Grace Church of Dover Staging</title>
+  <title>Grace Church of Dover</title>
   <link rel="preconnect" href="images/crowd.jpg" as="image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <style>
-    body { 
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .hero {
-         background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/crowd.jpg');
-        background-size: cover;
-        background-position: center;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-    }
-
-    .hero h1{
-        font-family: "Oswald", sans-serif;
-        font-size: 4rem;
-        font-weight: 500;
-        color:white;
-        text-shadow: 4px 4px 3px #000000;
-        text-transform: uppercase;
-        margin: 1rem 0rem;
-    }
-    #navbar {
-        overflow: hidden;
-        background-color: #000000;
-        padding: 10px 0px;
-        transition: 0.4s;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 99;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-
-    #navbuttons a {
-        float: left;
-        color: white;
-        text-align: center;
-        padding: 12px;
-        text-decoration: none;
-        font-size: 18px; 
-        line-height: 25px;
-        border-radius: 4px;
-        text-transform: uppercase;
-    }
-
-    #navbuttons a:hover {
-    background-color: white;
-    color: black;
-    }
-
-    #navbuttons {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-        justify-self: end; 
-        margin-right: 1rem;
-    }
-
-    .hero button{
-        background-color: transparent;
-        border: 2px solid white;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
-        text-transform: uppercase;
-        font-weight: 700;
-        border-radius: 4px;
-        transition: 0.4s;
-    }
-
-    .hero button:hover{
-        background-color: white;
-        color: black;
-    }
-
-    #logo{
-        justify-self: start;
-        margin-left: 1rem;
-    }
-
-
-
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="navbar">
-        <a href="#default" id="logo">
+        <a href="index.html" id="logo">
             <img src="images/logo.webp"/>
         </a>
         <div id="navbuttons">
-            <a href="#about">I'm New</a>
-            <a href="#about">About</a>
-            <a href="#about">Ministries</a>
-            <a href="#about">Give</a>
+            <a href="im-new.html">I'm New</a>
+            <a href="about.html">About</a>
+            <a href="ministries.html">Ministries</a>
+            <a href="give.html">Give</a>
         </div>
     </div>
     <div class="hero">
       <h1>Welcome to Grace Church</h1>
-      <button>I'm New</button>
+      <a class="button" href="im-new.html">I'm New</a>
     </div>
-
 </body>
 </html>
