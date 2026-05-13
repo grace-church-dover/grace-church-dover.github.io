@@ -10,7 +10,7 @@ Staging website for Grace Church of Dover, served via GitHub Pages from the repo
 
 Plain static site. No build step, no package manager, no test framework, no JavaScript framework. Each page is a standalone `.html` file that links to a shared `styles.css`.
 
-- Pages: `index.html`, `im-new.html`, `about.html`, `ministries.html`, `give.html` — one file per nav tab.
+- Pages: `index.html`, `im-new.html`, `about.html`, `connect.html`, `serve.html`, `give.html` — one file per nav tab.
 - `styles.css` — shared styles for navbar, hero, and the `.hero .button` class. Linked from every page.
 - `images/` — referenced by relative path (e.g. `images/crowd.jpg`, `images/logo.webp`). The `20260426_*.jpg` files are unstaged photo assets not yet wired into any page.
 
