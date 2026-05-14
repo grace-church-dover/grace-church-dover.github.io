@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="nav.js" defer></script>
 </head>
 <body>
     <div id="navbar">
@@ -15,8 +16,22 @@
         </a>
         <div id="navbuttons">
             <a href="im-new.html">I'm New</a>
-            <a href="about.html">About</a>
-            <a href="connect.html">Connect</a>
+            <div class="dropdown">
+                <a tabindex="0">About</a>
+                <div class="dropdown-menu">
+                    <a href="#">What We Believe</a>
+                    <a href="#">Leadership</a>
+                    <a href="#">Our Story</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a tabindex="0">Connect</a>
+                <div class="dropdown-menu">
+                    <a href="#">Shepherding Groups</a>
+                    <a href="#">Events</a>
+                    <a href="#">Membership</a>
+                </div>
+            </div>
             <a href="serve.html">Serve</a>
             <a href="give.html">Give</a>
         </div>
@@ -25,5 +40,27 @@
       <h1>Welcome to Grace Church</h1>
       <a class="button" href="im-new.html">I'm New</a>
     </div>
+
+    <section class="callout">
+      <h2>Join Us Sunday</h2>
+      <p>Worship at 10 AM &middot; Coffee &amp; fellowship at 9:30 AM</p>
+      <p>25 Willand Dr, Somersworth, NH 03878</p>
+      <a class="button" href="im-new.html">Plan Your Visit</a>
+    </section>
+
+    <section class="quick-links">
+      <a class="quick-link" href="im-new.html">
+        <span class="quick-link-title">I'm New</span>
+        <span class="quick-link-desc">First time here? Here's what to expect on a Sunday.</span>
+      </a>
+      <a class="quick-link" href="serve.html">
+        <span class="quick-link-title">Serve</span>
+        <span class="quick-link-desc">Use your gifts to bless our church and community.</span>
+      </a>
+      <a class="quick-link" href="give.html">
+        <span class="quick-link-title">Give</span>
+        <span class="quick-link-desc">Support the ministry and mission of Grace Church.</span>
+      </a>
+    </section>
 </body>
 </html>

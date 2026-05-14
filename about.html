@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="nav.js" defer></script>
 </head>
 <body>
     <div id="navbar">
@@ -15,8 +16,22 @@
         </a>
         <div id="navbuttons">
             <a href="im-new.html">I'm New</a>
-            <a href="about.html">About</a>
-            <a href="connect.html">Connect</a>
+            <div class="dropdown">
+                <a tabindex="0">About</a>
+                <div class="dropdown-menu">
+                    <a href="#">What We Believe</a>
+                    <a href="#">Leadership</a>
+                    <a href="#">Our Story</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a tabindex="0">Connect</a>
+                <div class="dropdown-menu">
+                    <a href="#">Shepherding Groups</a>
+                    <a href="#">Events</a>
+                    <a href="#">Membership</a>
+                </div>
+            </div>
             <a href="serve.html">Serve</a>
             <a href="give.html">Give</a>
         </div>

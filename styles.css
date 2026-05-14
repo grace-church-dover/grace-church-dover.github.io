@@ -7,7 +7,7 @@ body {
     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/crowd.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +78,6 @@ body {
 }
 
 #navbar {
-    overflow: hidden;
     background-color: #000000;
     padding: 10px 0px;
     transition: 0.4s;
@@ -116,10 +115,44 @@ body {
     margin-right: 1rem;
 }
 
-.hero .button {
+.dropdown {
+    position: relative;
+}
+
+#navbuttons .dropdown > a {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    min-width: 200px;
+    padding: 10px 0 0.5rem 0;
+    flex-direction: column;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: flex;
+}
+
+#navbuttons .dropdown-menu a {
+    text-align: left;
+    padding: 10px 18px;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+.button {
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #1a1a1a;
+    color: #1a1a1a;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -132,6 +165,16 @@ body {
     transition: 0.4s;
 }
 
+.button:hover {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.hero .button {
+    border-color: white;
+    color: white;
+}
+
 .hero .button:hover {
     background-color: white;
     color: black;
@@ -140,4 +183,74 @@ body {
 #logo {
     justify-self: start;
     margin-left: 1rem;
+}
+
+.callout {
+    padding: 4rem 1.5rem;
+    text-align: center;
+    background-color: #f7f5f0;
+}
+
+.callout h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: 0.03em;
+}
+
+.callout p {
+    font-size: 1.125rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.callout .button {
+    margin-top: 2rem;
+}
+
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quick-link {
+    flex: 1 1 280px;
+    min-height: 260px;
+    padding: 3rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+}
+
+.quick-link + .quick-link {
+    border-left: 1px solid #2a2a2a;
+}
+
+.quick-link:hover {
+    background-color: #2a2a2a;
+}
+
+.quick-link-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.75rem;
+}
+
+.quick-link-desc {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 260px;
+    color: #ccc;
 }
