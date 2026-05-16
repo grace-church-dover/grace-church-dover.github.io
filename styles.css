@@ -427,6 +427,71 @@ body {
     text-decoration-color: #444;
 }
 
+.leadership {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.leadership h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 2rem 0 2.5rem;
+}
+
+.leader-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.leader-card {
+    flex: 0 1 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.leader-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background-color: #e8e6e0;
+    margin-bottom: 1rem;
+}
+
+.leader-name {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #1a1a1a;
+    margin: 0 0 0.25rem;
+    text-align: center;
+}
+
+.leader-role {
+    font-style: italic;
+    color: #666;
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+.leader-bio {
+    color: #444;
+    line-height: 1.7;
+    margin: 0;
+}
+
 #footer a {
     color: white;
     font-size: 1.5rem;
