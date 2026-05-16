@@ -27,6 +27,10 @@ body {
     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/building_entrance.png');
 }
 
+.hero.hero-what-we-value {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/open_bible.jpg');
+}
+
 .info-grid {
     display: flex;
     flex-wrap: wrap;
@@ -274,6 +278,139 @@ body {
     padding: 0 1.5rem;
     margin-top: auto;
     flex-shrink: 0;
+}
+
+.values {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.values-link {
+    text-align: center;
+    margin: 0 0 2.5rem 0;
+}
+
+.values-link a {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 4px;
+    transition: opacity 0.3s;
+}
+
+.values-link a:hover {
+    opacity: 0.6;
+}
+
+.values details {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.values details:first-of-type {
+    border-top: 1px solid #e0e0e0;
+}
+
+.values summary {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #1a1a1a;
+    padding: 1.25rem 0;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.values summary::-webkit-details-marker {
+    display: none;
+}
+
+.values summary::after {
+    content: '+';
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 1;
+    color: #1a1a1a;
+    flex-shrink: 0;
+    width: 1.5rem;
+    text-align: center;
+}
+
+.values details[open] summary::after {
+    content: '\2212';
+}
+
+.value-body {
+    padding: 0 0 1.5rem 0;
+    color: #444;
+    line-height: 1.7;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.value-body p {
+    margin: 0 0 1rem 0;
+}
+
+.value-body p:last-child {
+    margin-bottom: 0;
+}
+
+.value-tagline {
+    font-style: italic;
+    color: #666;
+}
+
+.beliefs {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 7rem 1.5rem 3rem;
+    box-sizing: border-box;
+}
+
+.beliefs h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.beliefs-preamble {
+    font-style: italic;
+    color: #555;
+    line-height: 1.7;
+    margin: 0 0 2.5rem 0;
+}
+
+.beliefs p {
+    color: #444;
+    line-height: 1.7;
+    margin: 0 0 1.25rem 0;
+}
+
+.beliefs p strong {
+    color: #1a1a1a;
+    letter-spacing: 0.02em;
 }
 
 #footer a {
