@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:dovergrace.org)"
+      "WebFetch(domain:dovergrace.org)",
+      "WebFetch(domain:biblia.com)"
     ]
   }
 }

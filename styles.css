@@ -413,6 +413,20 @@ body {
     letter-spacing: 0.02em;
 }
 
+.beliefs a,
+.value-body a {
+    color: #444;
+    text-decoration: underline;
+    text-decoration-color: #999;
+    text-decoration-thickness: 1px;
+    transition: text-decoration-color 0.2s;
+}
+
+.beliefs a:hover,
+.value-body a:hover {
+    text-decoration-color: #444;
+}
+
 #footer a {
     color: white;
     font-size: 1.5rem;
