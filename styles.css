@@ -440,6 +440,24 @@ body {
     box-sizing: border-box;
 }
 
+.story {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.story p {
+    color: #444;
+    line-height: 1.7;
+    margin: 0 0 1.25rem 0;
+}
+
+.story p:last-child {
+    margin-bottom: 0;
+}
+
 .leadership h2 {
     font-family: "Oswald", sans-serif;
     font-size: 2.5rem;
