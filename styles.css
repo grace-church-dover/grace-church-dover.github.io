@@ -579,6 +579,12 @@ body {
         z-index: 100;
     }
 
+    #nav-toggle,
+    #logo {
+        position: relative;
+        z-index: 99;
+    }
+
     #nav-toggle {
         display: block;
     }
@@ -617,6 +623,14 @@ body {
         padding: 14px 1.5rem;
         font-size: 1.5rem;
         border-radius: 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    #navbuttons a:hover,
+    #navbuttons a:active,
+    #navbuttons a:focus {
+        background-color: transparent;
+        color: white;
     }
 
     .dropdown {
