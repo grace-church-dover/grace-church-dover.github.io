@@ -419,7 +419,8 @@ body {
 }
 
 .beliefs a,
-.value-body a {
+.value-body a,
+.story a {
     color: #444;
     text-decoration: underline;
     text-decoration-color: #999;
@@ -428,7 +429,8 @@ body {
 }
 
 .beliefs a:hover,
-.value-body a:hover {
+.value-body a:hover,
+.story a:hover {
     text-decoration-color: #444;
 }
 
