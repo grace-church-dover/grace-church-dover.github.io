@@ -593,7 +593,7 @@ body {
 @media (max-width: 900px) {
 
     .hero img {
-        width: 40vw;
+        width: 50vw;
         height: auto;
     }
     #navbar {
