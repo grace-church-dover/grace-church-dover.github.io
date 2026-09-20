@@ -19,6 +19,11 @@ body {
     position: relative;
 }
 
+.hero img {
+    width: 30vw;
+    height: auto;
+}
+
 .hero.hero-compact {
     min-height: 40vh;
 }
@@ -586,6 +591,11 @@ body {
 }
 
 @media (max-width: 900px) {
+
+    .hero img {
+        width: 40vw;
+        height: auto;
+    }
     #navbar {
         grid-template-columns: 1fr auto;
         z-index: 100;
@@ -704,6 +714,11 @@ body {
 @media (max-width: 600px) {
     .hero h1 {
         font-size: 2.5rem;
+    }
+
+    .hero img {
+        width: 60vw;
+        height: auto;
     }
 
     #logo img {
