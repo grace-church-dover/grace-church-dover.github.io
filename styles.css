@@ -22,6 +22,8 @@ body {
 .hero img {
     width: 30vw;
     height: auto;
+    background-color: darkgray;
+    background-blend-mode: multiply;
 }
 
 .hero.hero-compact {
