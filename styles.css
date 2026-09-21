@@ -8,6 +8,8 @@ body {
 
 .hero {
     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/crowd.jpg');
+    background-color: darkgray;
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
     min-height: 80vh;
@@ -22,8 +24,6 @@ body {
 .hero img {
     width: 30vw;
     height: auto;
-    background-color: darkgray;
-    background-blend-mode: multiply;
 }
 
 .hero.hero-compact {
