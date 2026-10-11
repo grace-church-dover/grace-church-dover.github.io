@@ -19,6 +19,8 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
+    padding-top: 80px;
+    box-sizing: border-box;
 }
 
 .hero img {
@@ -115,7 +117,7 @@ body {
     top: 0;
     z-index: 99;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     gap: 1rem;
 }
 
