@@ -88,9 +88,8 @@ body {
     background-position: center 25%;
 }
 
-/* Ministry page banners: full image shown edge-to-edge (no cropping, text is
-   baked into the image). The <picture> swaps square -> widescreen at 900px.
-   margin-top clears the fixed navbar (logo 44px + 2x10px padding ~= 69px). */
+/* Ministry page banners: the square image, centered, sized by viewport width
+   (40vw on mobile, 20vw on desktop). Text is baked into the image. */
 .ministry-banner {
     display: block;
     /* 69px clears the fixed navbar; the extra is whitespace above the banner. */
@@ -99,16 +98,14 @@ body {
 
 .ministry-banner img {
     display: block;
-    width: auto;
-    max-width: 100%;
+    width: 40vw;
     height: auto;
-    max-height: 300px;
     margin: 0 auto;
 }
 
 @media (min-width: 900px) {
     .ministry-banner img {
-        max-height: 440px;
+        width: 20vw;
     }
 }
 
