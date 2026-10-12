@@ -517,6 +517,13 @@ body {
     text-decoration-color: #444;
 }
 
+/* Buttons inside text sections shouldn't inherit the link underline. */
+.beliefs .button,
+.value-body .button,
+.story .button {
+    text-decoration: none;
+}
+
 .leadership {
     width: 100%;
     max-width: 1200px;
