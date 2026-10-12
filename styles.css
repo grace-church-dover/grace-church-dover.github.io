@@ -577,9 +577,18 @@ body {
 }
 
 .leader-card {
-    flex: 0 1 320px;
+    flex: 0 1 100%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
+}
+
+/* Two profiles wide on desktop, one wide below it. */
+@media (min-width: 900px) {
+    .leader-card {
+        flex-basis: calc(50% - 1.25rem);
+        max-width: none;
+    }
 }
 
 .leader-photo {
