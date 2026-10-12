@@ -28,8 +28,9 @@ body {
     height: auto;
 }
 
-/* Responsive image bar: 1 column on mobile, 2 on mid-width, 3 on desktop.
-   Source images are 500px squares; object-fit keeps any photo square. */
+/* Responsive image bar: 1 per row below 900px, 2 per row at 900-1023px,
+   3 per row at 1024px+. Source images are 500px squares; object-fit keeps
+   any photo square. Images fill the column (capped at their 500px native size). */
 .image-bar {
     display: flex;
     flex-wrap: wrap;
@@ -44,23 +45,24 @@ body {
 .image-bar img {
     flex: 0 1 100%;
     min-width: 0;
-    max-width: 500px;
+    max-width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: contain;
     background-color: #000000;
     display: block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
     .image-bar {
         max-width: 1020px;
     }
     .image-bar img {
         flex-basis: calc(50% - 0.5rem);
+        max-width: 500px;
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
     .image-bar {
         max-width: 1540px;
     }
