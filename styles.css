@@ -28,6 +28,47 @@ body {
     height: auto;
 }
 
+/* Responsive image bar: 1 column on mobile, 2 on mid-width, 3 on desktop.
+   Source images are 500px squares; object-fit keeps any photo square. */
+.image-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.image-bar img {
+    flex: 0 1 100%;
+    min-width: 0;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background-color: #000000;
+    display: block;
+}
+
+@media (min-width: 600px) {
+    .image-bar {
+        max-width: 1020px;
+    }
+    .image-bar img {
+        flex-basis: calc(50% - 0.5rem);
+    }
+}
+
+@media (min-width: 900px) {
+    .image-bar {
+        max-width: 1540px;
+    }
+    .image-bar img {
+        flex-basis: calc((100% - 2rem) / 3);
+    }
+}
+
 .hero.hero-compact {
     min-height: 40vh;
 }
