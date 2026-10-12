@@ -152,6 +152,57 @@ body {
     text-decoration: underline;
 }
 
+/* Linked icon bar: 3 items across on desktop, 1 per row below 900px. */
+.feature-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* No bottom padding: the callout below supplies the gap, keeping the
+       space above and below the icons balanced. */
+    padding: 3rem 1.5rem 0;
+    box-sizing: border-box;
+}
+
+.feature-item {
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #1a1a1a;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    transition: color 0.3s;
+}
+
+.feature-item:hover {
+    color: #777;
+}
+
+.feature-icon {
+    font-size: 2.75rem;
+    color: inherit;
+    margin-bottom: 1rem;
+}
+
+.feature-label {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+@media (min-width: 900px) {
+    .feature-item {
+        flex-basis: calc(33.333% - 1rem);
+    }
+}
+
 .hero h1 {
     font-family: "Oswald", sans-serif;
     font-size: 4rem;
